@@ -29,12 +29,11 @@
        @for($i=0;$i < count($users);$i++)
        <tr bordered>
            <td>{{$users[$i]['id']}}</td>
-           <td>
-           <a href="\user\{{$users[$i]['id']}}\edit" _blank>{{$users[$i]['name']}}</a></td>
-           <td>{{$users[$i]['mobile']}}</td>
-           <td>{{$users[$i]['role']['name']}}</td>
-           <td>{{$users[$i]['password']}}</td>
-           <td>{{$users[$i]['email']}}</td>
+           <td><a href="\user\{{$users[$i]['id']}}\edit" _blank>{{$users[$i]['name']}}</a></td>
+           <td><a href="\user\{{$users[$i]['id']}}\edit" _blank>{{$users[$i]['mobile']}}</a></td>
+           <td><a href="\user\{{$users[$i]['id']}}\edit" _blank>{{$users[$i]['role']['name']}}</a></td>
+           <td><a href="\user\{{$users[$i]['id']}}\edit" _blank>{{$users[$i]['password']}}</a></td>
+           <td><a href="\user\{{$users[$i]['id']}}\edit" _blank>{{$users[$i]['email']}}</a></td>
        </tr>
        @endfor
    </table>
